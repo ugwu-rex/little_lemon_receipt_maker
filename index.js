@@ -9,9 +9,9 @@ const dishData = [
 // Tax Value
 const tax = 1.2;
 
-// Task 1: Implement getPrices()
+// Implement getPrices()
 function getPrices(taxBoolean) {
-    // WRITE YOUR CODE HERE
+
     for (let dish of dishData) {
         let finalPrice;
         if (taxBoolean === true) {
@@ -26,11 +26,10 @@ function getPrices(taxBoolean) {
     }
 };
 
-// getPrices()
 
-// Task 2: Implement getDiscount()
+// Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
-    // WRITE YOUR CODE HERE
+
     getPrices(taxBoolean);
     let discount;
     if (typeof guests === 'number' && guests > 0 && guests < 30) {
